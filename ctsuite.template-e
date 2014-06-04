@@ -1,8 +1,0 @@
-{variables, [
-  {name, "suitename"}, 
-  {copyright_year, "2011"},
-  {author_name, "Ruan Pienaar"},
-  {author_email,"EMAIL_ADDRESS"}
-]}.
-{dir, "test"}.
-{template, "ctsuite.erl", "test/{{name}}_SUITE.erl"}.
