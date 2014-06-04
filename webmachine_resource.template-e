@@ -1,8 +1,0 @@
-{variables, [
-  {name, "my_resource"}, 
-  {app_name, "wm_app"},
-  {copyright_year, "2011"},
-  {author_name, "Ruan Pienaar"},
-  {author_email, "EMAIL_ADDRESS"}
-]}.
-{template, "webmachine_resource.erl", "src/{{app_name}}_{{name}}_resource.erl"}.
