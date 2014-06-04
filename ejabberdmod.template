@@ -1,0 +1,4 @@
+{variables, [
+  {name, "myejabberdmod"}, 
+  {author_name, "Ruan Pienaar <ruan800@gmail.com>"}]}.
+{template, "ejabberdmod.erl", "src/mod_{{name}}.erl"}.

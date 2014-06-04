@@ -1,0 +1,9 @@
+{variables, [
+  {name, "escriptname"}, 
+  {copyright_year, "2011"},
+  {author_name, "Ruan Pienaar"},
+  {author_email,"ruan800@gmail.com"}
+]}.
+{dir, "bin"}.
+{template, "escript", "bin/{{name}}"}.
+{chmod, 8#00770, "bin/{{name}}"}.
