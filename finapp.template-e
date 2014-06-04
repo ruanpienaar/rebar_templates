@@ -2,7 +2,7 @@
   {name, "appname"},
   {app_dir, "."},
   {copyright_year, "2011"},
-  {author_name, "AUTHOR_NAME AUTHOR_SURNAME"},
+  {author_name, "Ruan Pienaar"},
   {author_email,"EMAIL_ADDRESS"}
 ]}.
 {dir, "{{app_dir}}/src"}.
