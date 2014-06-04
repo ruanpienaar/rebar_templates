@@ -1,7 +1,0 @@
-{variables, [
-  {name, "mylogger"}, 
-  {author_name, "Ruan Pienaar"},
-  {author_email, "EMAIL_ADDRESS"},
-  {copyright_year, 2011}
-]}.
-{template, "finevt.erl", "src/{{name}}.erl"}.
