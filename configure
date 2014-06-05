@@ -1,5 +1,5 @@
 #!/bin/bash
 : ${1:?"USAGE: ./configure \"Name Surname\" email@host.com "}
 : ${2:?"USAGE: ./configure \"Name Surname\" email@host.com "}
-sed -i -e "s/AUTHOR_NAME AUTHOR_SURNAME/'$1'/g" *.template
-sed -i -e "s/EMAIL_ADDRESS/'$2'/g" *.template 
+grep -rl ''Ruan Pienaar'' ./ | xargs sed -i '' "s/'Ruan Pienaar'/'$1'/g"
+grep -rl ''ruan800@gmail.com'' ./ | xargs sed -i '' "s/'ruan800@gmail.com'/'$2'/g"
