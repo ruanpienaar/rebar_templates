@@ -2,7 +2,7 @@
   {name, "elementname"}, 
   {app_name, "app_name"},
   {copyright_year, "2011"},
-  {author_name, "'Ruan Pienaar'"},
-  {author_email,"'ruan800@gmail.com'"}
+  {author_name, "AUTHOR_NAME AUTHOR_SURNAME"},
+  {author_email,"'EMAIL_ADDRESS'"}
 ]}.
 {template, "nitroelem.erl", "src/{{app_name}}_{{name}}_element.erl"}.

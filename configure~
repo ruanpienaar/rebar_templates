@@ -2,4 +2,4 @@
 : ${1:?"USAGE: ./configure \"Name Surname\" email@host.com "}
 : ${2:?"USAGE: ./configure \"Name Surname\" email@host.com "}
 grep -rl 'AUTHOR_NAME AUTHOR_SURNAME' ./ | xargs sed -i '' "s/AUTHOR_NAME AUTHOR_SURNAME/'$1'/g"
-grep -rl 'EMAIL_ADDRESS' ./ | xargs sed -i '' "s/'EMAIL_ADDRESS'/'$2'/g"
+grep -rl ''EMAIL_ADDRESS'' ./ | xargs sed -i '' "s/'EMAIL_ADDRESS'/'$2'/g"
