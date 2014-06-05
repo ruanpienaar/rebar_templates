@@ -1,18 +1,25 @@
 {variables, [
-  {name, "myproject"}, 
-  {copyright_year, "2011"},
+  {appid, "myproject"}, 
+  {copyright_year, "2014"},
   {author_name, "AUTHOR_NAME AUTHOR_SURNAME"},
   {author_email,"'EMAIL_ADDRESS'"},
   {description, "Fill in description of project here."}
 ]}.
 {dir, "deps"}.
 {dir, "src"}.
+{template, "simpleapp.app.src", "src/{{appid}}.app.src"}.
+{template, "simpleapp_app.erl", "src/{{appid}}_app.erl"}.
+{template, "simpleapp_sup.erl", "src/{{appid}}_sup.erl"}.
 {dir, "ebin"}.
 {dir, "include"}.
-{dir, "test"}.
+{file, "erlang_include.hrl", "include/{{appid}}.hrl"}.
+{dir, "tests"}.
+{template, "eunit.erl", "tests/{{appid}}_tests.erl"}.
 {dir, "priv"}.
 {template, "project_README", "README"}.
-{file, "project_rebar.config", "rebar.config"}.
-{file, "project_Emakefile", "Emakefile"}.
-{file, "project_Makefile", "Makefile"}.
+{template, "project_rebar.config.template", "rebar.config"}.
+{file, "project_library_Makefile", "Makefile"}.
 {file, "project_gitignore", ".gitignore"}.
+{template, "project_library_start-dev.template","start-dev.sh"}.
+{chmod, 8#744, "start-dev.sh"}.
+{file, "application_simplenode.sys.config", "sys.config"}.

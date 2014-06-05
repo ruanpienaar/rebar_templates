@@ -9,7 +9,7 @@
 
 {template, "project_README", "README"}.
 {template, "project_rebar.config.template", "rebar.config"}.
-{file, "project_Makefile", "Makefile"}.
+{file, "project_application_Makefile", "Makefile"}.
 {file, "project_gitignore", ".gitignore"}.
 
 {dir, "deps"}.
@@ -24,11 +24,12 @@
     {dir, "apps/{{appid}}/ebin"}.
     {dir, "apps/{{appid}}/include"}.
     {file, "erlang_include.hrl", "apps/{{appid}}/include/{{appid}}.hrl"}.
-    {dir, "apps/{{appid}}/test"}.
+    {dir, "apps/{{appid}}/tests"}.
+    {template, "eunit.erl", "apps/{{appid}}/tests/{{appid}}_tests.erl"}.
     {dir, "apps/{{appid}}/priv"}.
 
 {dir, "docs"}.
-{dir, "test"}.
+{dir, "tests"}.
 
 %% How can i simply run create-node nodeid=[...] ???
 {dir, "rel"}.
