@@ -1,26 +1,72 @@
-rebar_templates
+# rebar_templates
 ===============
 
-rebar_templates
+## rebar_templates
 
-Note: have rebar in $PATH.
+Note: *have rebar in $PATH.*
 
-1) clone 
+### Setup Header in templates :
 
-2) cd into DIR
+```bash
+mkdir ~/.rebar/templates
+```
 
-3) ./configure "YourName YourSurname" email@email.com
+```bash
+clone https://github.com/ruanpienaar/rebar_templates
+```
 
-4) mkdir ~/.rebar/templates
+```bash
+cd rebar_templates
+```
 
-5) cp -R * ~/.rebar/templates
+```bash
+./configure "YourName YourSurname" email@email.com
+```
 
+```bash
+cp -R * ~/.rebar/templates
+```
 
-Creating projects:
+## Creating Application:
 
-1) mkdir project_name
+```bash
+mkdir testapp
+```
 
-2) cd project_name
+```bash
+cd testapp
+```
 
-3) rebar create template=project project_name="project_name" description="description"
+```bash
+rebar create template=application appid=testapp nodeid=testapp_node
+```
 
+```bash
+make
+```
+
+```bash
+rel/testapp_node/bin/testapp_node console
+```
+
+## Creating Library:
+
+```bash
+mkdir testlib
+```
+
+```bash
+cd testlib
+```
+
+```bash
+rebar create template=library appid=testlib
+```
+
+```bash
+make
+```
+
+```bash
+./start-dev.sh
+```
