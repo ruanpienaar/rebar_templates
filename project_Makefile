@@ -3,62 +3,52 @@ ERLC				= erlc
 EBIN_DIRS		:= $(wildcard deps/*/ebin)
 APPS				:= $(shell dir apps)
 REL_DIR     = rel
-NODE				= {{name}}
-REL					= {{name}}
+NODE				= {{appid}}
+REL					= {{appid}}
 SCRIPT_PATH  := $(REL_DIR)/$(NODE)/bin/$(REL)
 
-.PHONY: rel deps
+.PHONY: rel offline compile get-deps update-deps test clean deep-clean
 
-all: deps compile
+rel: compile
+	@rebar generate -f
 
-compile: deps
+offline:
+	@rebar compile
+	@rebar generate
+
+compile: get-deps update-deps
 	@rebar compile
 
-deps:
+beams:
+	@rebar compile
+
+get-deps:
 	@rebar get-deps
-	@rebar check-deps
+
+update-deps:
+	@rebar update-deps
+
+test: offline
+	@rebar skip_deps=true apps="loom" eunit
 
 clean:
 	@rebar clean
 
-realclean: clean
+deep-clean: clean
 	@rebar delete-deps
 
-test:
-	@rebar skip_deps=true ct
+setup_dialyzer:
+	dialyzer --build_plt --apps erts kernel stdlib mnesia compiler syntax_tools runtime_tools crypto tools inets ssl webtool public_key observer
+	dialyzer --add_to_plt deps/*/ebin
 
-rel: deps
-	@rebar compile generate
-
-start: $(SCRIPT_PATH)
-	@./$(SCRIPT_PATH) start
-
-stop: $(SCRIPT_PATH)
-	@./$(SCRIPT_PATH) stop
-
-ping: $(SCRIPT_PATH)
-	@./$(SCRIPT_PATH) ping
-
-attach: $(SCRIPT_PATH)
-	@./$(SCRIPT_PATH) attach
-
-console: $(SCRIPT_PATH)
-	@./$(SCRIPT_PATH) console
-
-restart: $(SCRIPT_PATH)
-	@./$(SCRIPT_PATH) restart
-
-reboot: $(SCRIPT_PATH)
-	@./$(SCRIPT_PATH) reboot
+dialyzer: compile
+	dialyzer */apps/*/ebin
 
 doc:
 	rebar skip_deps=true doc
 	for app in $(APPS); do \
 		cp -R apps/$${app}/doc doc/$${app}; \
 	done;
-
-dev:
-	@erl -pa ebin include deps/*/ebin deps/*/include ebin include -boot start_sasl
 
 analyze: checkplt
 	@rebar skip_deps=true dialyze

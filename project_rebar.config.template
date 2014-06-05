@@ -10,7 +10,8 @@
 {app_bin, []}.
 {deps_dir, ["deps"]}.
 {deps, [
-  {edown, ".*", {git, "git://github.com/esl/edown.git", "HEAD"}}
+  {edown, ".*", {git, "git://github.com/esl/edown.git", "HEAD"}},
+  {lager, ".*", {git, "git://github.com/basho/lager",{branch,"master"}}}
 ]}.
 {sub_dirs,
  ["apps/{{appid}}",

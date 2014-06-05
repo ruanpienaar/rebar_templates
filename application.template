@@ -1,0 +1,48 @@
+{variables, [
+  {appid, "myproject"}, 
+  {copyright_year, "2014"},
+  {author_name, "AUTHOR_NAME AUTHOR_SURNAME"},
+  {author_email,"'EMAIL_ADDRESS'"},
+  {description, "Fill in description of project here."},
+  {nodeid, "myproject"}
+]}.
+
+{template, "project_README", "README"}.
+{template, "project_rebar.config.template", "rebar.config"}.
+{file, "project_Makefile", "Makefile"}.
+{file, "project_gitignore", ".gitignore"}.
+
+{dir, "deps"}.
+
+%% How can i just run create-app-full.template ???
+{dir, "apps"}.
+    {dir, "apps/{{appid}}"}.
+    {dir, "apps/{{appid}}/src"}.
+    {template, "simpleapp.app.src", "apps/{{appid}}/src/{{appid}}.app.src"}.
+    {template, "simpleapp_app.erl", "apps/{{appid}}/src/{{appid}}_app.erl"}.
+    {template, "simpleapp_sup.erl", "apps/{{appid}}/src/{{appid}}_sup.erl"}.
+    {dir, "apps/{{appid}}/ebin"}.
+    {dir, "apps/{{appid}}/include"}.
+    {file, "erlang_include.hrl", "apps/{{appid}}/include/{{appid}}.hrl"}.
+    {dir, "apps/{{appid}}/test"}.
+    {dir, "apps/{{appid}}/priv"}.
+
+{dir, "docs"}.
+{dir, "test"}.
+
+%% How can i simply run create-node nodeid=[...] ???
+{dir, "rel"}.
+{dir, "rel/{{nodeid}}/"}.
+    {template, "application_simplenode.reltool.config", "rel/reltool.config"}.
+    {file, "simplenode.erl.script", "rel/files/erl"}.
+    {chmod, 8#744, "rel/files/erl"}.
+    {file, "simplenode.nodetool", "rel/files/nodetool"}.
+    {chmod, 8#744, "rel/files/nodetool"}.
+    {file, "simplenode.runner", "rel/files/{{nodeid}}"}.
+    {chmod, 8#744, "rel/files/{{nodeid}}"}.
+    {file, "application_simplenode.sys.config", "rel/files/sys.config"}.
+    {template, "simplenode.vm.args", "rel/files/vm.args"}.
+    {template, "simplenode.windows.runner.cmd", "rel/files/{{nodeid}}.cmd"}.
+    {file, "simplenode.windows.start_erl.cmd", "rel/files/start_erl.cmd"}.
+    {file, "simplenode.install_upgrade.escript", "rel/files/install_upgrade.escript"}.
+    
