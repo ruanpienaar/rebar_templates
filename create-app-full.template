@@ -1,0 +1,12 @@
+{variables, [{app, "default_app"}]}.
+{dir, "apps/"}.
+{dir, "apps/{{app}}"}.
+{dir, "apps/{{app}}/src"}.
+{template, "simpleapp.app.src", "apps/{{app}}/src/{{app}}.app.src"}.
+{template, "simpleapp_app.erl", "apps/{{app}}/src/{{app}}_app.erl"}.
+{template, "simpleapp_sup.erl", "apps/{{app}}/src/{{app}}_sup.erl"}.
+{dir, "apps/{{app}}/ebin"}.
+{dir, "apps/{{app}}/include"}.
+{file, "apps/{{app}}/include/{{app}}.hrl", "erlang_include.hrl"}.
+{dir, "apps/{{app}}/test"}.
+{dir, "apps/{{app}}/priv"}.
