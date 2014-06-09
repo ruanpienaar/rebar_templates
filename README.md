@@ -27,7 +27,7 @@ cd rebar_templates
 cp -R * ~/.rebar/templates
 ```
 
-## Creating Application:
+## Creating Application skeleton:
 
 ```bash
 mkdir testapp
@@ -49,7 +49,7 @@ make
 rel/testapp_node/bin/testapp_node console
 ```
 
-## Creating Library:
+## Creating Library skeleton:
 
 ```bash
 mkdir testlib
@@ -69,4 +69,11 @@ make
 
 ```bash
 ./start-dev.sh
+```
+
+## Adding more applications to the application skeleton:
+
+```bash
+cd apps
+create template=single_app appid=testapp2
 ```
