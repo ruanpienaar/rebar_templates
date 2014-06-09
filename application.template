@@ -14,13 +14,12 @@
 
 {dir, "deps"}.
 
-%% How can i just run create-app-full.template ???
 {dir, "apps"}.
     {dir, "apps/{{appid}}"}.
     {dir, "apps/{{appid}}/src"}.
-    {template, "simpleapp.app.src", "apps/{{appid}}/src/{{appid}}.app.src"}.
-    {template, "simpleapp_app.erl", "apps/{{appid}}/src/{{appid}}_app.erl"}.
-    {template, "simpleapp_sup.erl", "apps/{{appid}}/src/{{appid}}_sup.erl"}.
+    {template, "app.app.src", "apps/{{appid}}/src/{{appid}}.app.src"}.
+    {template, "app_app.erl", "apps/{{appid}}/src/{{appid}}_app.erl"}.
+    {template, "app_sup.erl", "apps/{{appid}}/src/{{appid}}_sup.erl"}.
     {dir, "apps/{{appid}}/ebin"}.
     {dir, "apps/{{appid}}/include"}.
     {file, "erlang_include.hrl", "apps/{{appid}}/include/{{appid}}.hrl"}.
@@ -31,7 +30,6 @@
 {dir, "docs"}.
 {dir, "tests"}.
 
-%% How can i simply run create-node nodeid=[...] ???
 {dir, "rel"}.
 {dir, "rel/{{nodeid}}/"}.
     {template, "application_simplenode.reltool.config", "rel/reltool.config"}.
