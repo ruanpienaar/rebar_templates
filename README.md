@@ -8,7 +8,7 @@ Note: *have rebar in $PATH.*
 ### Setup Header in templates :
 
 ```bash
-mkdir ~/.rebar/templates
+mkdir -p ~/.rebar/templates
 ```
 
 ```bash
