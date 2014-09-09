@@ -16,10 +16,6 @@ cd rebar_templates
 ```
 
 ```bash
-./configure "YourName YourSurname" email@email.com
-```
-
-```bash
 mkdir -p ~/.rebar/templates
 ```
 
