@@ -8,10 +8,6 @@ Note: *have rebar in $PATH.*
 ### Setup Header in templates :
 
 ```bash
-mkdir -p ~/.rebar/templates
-```
-
-```bash
 clone https://github.com/ruanpienaar/rebar_templates
 ```
 
@@ -21,6 +17,10 @@ cd rebar_templates
 
 ```bash
 ./configure "YourName YourSurname" email@email.com
+```
+
+```bash
+mkdir -p ~/.rebar/templates
 ```
 
 ```bash
