@@ -5,22 +5,12 @@
 
 Note: *have rebar in $PATH.*
 
-### Setup Header in templates :
-
-```bash
-clone https://github.com/ruanpienaar/rebar_templates
-```
-
-```bash
-cd rebar_templates
-```
-
 ```bash
 mkdir -p ~/.rebar/templates
 ```
 
 ```bash
-cp -R * ~/.rebar/templates
+cp * ~/.rebar/templates
 ```
 
 ## Creating Application skeleton:
