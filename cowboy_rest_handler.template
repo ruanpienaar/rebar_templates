@@ -1,0 +1,6 @@
+% rebar create In LIB/ or APPS/app/
+{variables, [
+  {name, "example"}
+]}.
+{dir,"src"}.
+{template, "cowboy_rest_handler.erl", "src/{{name}}.erl"}.

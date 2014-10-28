@@ -1,0 +1,4 @@
+% Run in LIB/ or APPS/APP/
+{variables, [{name, "example_gen_server"}]}.
+{dir,"src"}.
+{template, "gen_server_template.erl", "src/{{name}}.erl"}.

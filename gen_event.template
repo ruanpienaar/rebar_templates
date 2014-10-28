@@ -1,0 +1,6 @@
+% rebar create In LIB/ or APPS/app/
+{variables, [
+  {name, "my_event"}
+]}.
+{dir,"src"}.
+{template, "gen_event_template.erl", "src/{{name}}.erl"}.

@@ -1,0 +1,6 @@
+% rebar create In LIB/
+{variables, [{appid, "myapp"}]}.
+{dir,"src"}.
+{template, "app.app.src", "src/{{appid}}.app.src"}.
+{template, "app_app.erl", "src/{{appid}}_app.erl"}.
+{template, "app_sup.erl", "src/{{appid}}_sup.erl"}.

@@ -1,6 +1,6 @@
 %%%'   HEADER
 %%% @author {{author_name}} <{{author_email}}>
-%%% @copyright {{copyright_year}} {{author_name}}
+%%% @copyright {{author_name}}
 %%% @doc gen_event that {{description}}
 %%% @end
 -module({{name}}).

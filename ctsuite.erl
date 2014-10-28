@@ -1,10 +1,3 @@
-%%%'   HEADER
-%%% @author {{author_name}} <{{author_email}}> 
-%%% @since {{date}}
-%%% @copyright {{copyright_year}} {{author_name}}
-%%% @doc {{description}}
-%%% @end
-
 -module({{name}}_SUITE).
 %% Note: This directive should only be used in test suites.
 -compile(export_all).
@@ -19,7 +12,7 @@
 suite() ->
   [{timetrap,{minutes,10}}].
 
-%% @doc runs initialization before matching test suite is executed. 
+%% @doc runs initialization before matching test suite is executed.
 %%      This function may add key/value pairs to Config.
 -spec init_per_suite(Config0) ->
   Config1 | {skip, Reason} | {skip_and_save, Reason, Config1}
@@ -58,7 +51,7 @@ init_per_group(_GroupName, Config) ->
 end_per_group(_GroupName, _Config) ->
   ok.
 
-%% @doc runs initialization before matching test case. Should not alter or 
+%% @doc runs initialization before matching test case. Should not alter or
 %%      remove any key/value pairs to the Config, but may add to it.
 -spec init_per_testcase(TestCase, Config0) ->
   when
@@ -114,7 +107,7 @@ all() ->
 -spec my_test_case() -> Info
   when
       Info :: proplist().
-my_test_case() -> 
+my_test_case() ->
   [].
 
 %% @doc the test function.
@@ -125,7 +118,7 @@ my_test_case() ->
   Config0 :: Config1 :: proplist(),
       Reason :: term(),
       Comment :: term()
-my_test_case(_Config) -> 
+my_test_case(_Config) ->
   ok.
 %%%.
 %%% vim: set filetype=erlang tabstop=2 foldmarker=%%%',%%%. foldmethod=marker:

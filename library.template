@@ -1,8 +1,5 @@
 {variables, [
-  {appid, "myproject"}, 
-  {copyright_year, "2014"},
-  {author_name, "'Ruan Pienaar'"},
-  {author_email,"'ruan800@gmail.com'"},
+  {appid, "myproject"},
   {description, "Fill in description of project here."}
 ]}.
 {dir, "deps"}.
@@ -16,10 +13,10 @@
 {dir, "tests"}.
 {template, "eunit.erl", "tests/{{appid}}_tests.erl"}.
 {dir, "priv"}.
-{template, "project_README", "README"}.
-{template, "project_rebar.config.template", "rebar.config"}.
-{file, "project_library_Makefile", "Makefile"}.
-{file, "project_gitignore", ".gitignore"}.
-{template, "project_library_start-dev.template","start-dev.sh"}.
+{template, "README", "README"}.
+{template, "rebar.config.template", "rebar.config"}.
+{file, "library_Makefile", "Makefile"}.
+{file, "gitignore", ".gitignore"}.
+{template, "library_start-dev.template","start-dev.sh"}.
 {chmod, 8#744, "start-dev.sh"}.
 {file, "application_simplenode.sys.config", "sys.config"}.

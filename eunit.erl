@@ -1,11 +1,5 @@
-%%%'   HEADER
-%% @author    {{author_name}} <{{author_email}}>
-%% @copyright {{copyright_year}} {{author_name}}
-%% @doc       EUnit test suite module {{name}}.
-%% @end
-
 -module({{name}}_tests).
--author('{{author_name}} <{{author_email}}>').
+%%-author('').
 
 -define(NOTEST, true).
 -define(NOASSERT, true).

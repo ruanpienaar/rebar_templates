@@ -1,8 +1,7 @@
 #!/usr/bin/env escript
-%% -*- mode: erlang -*-
 %%%'   HEADER
-%% @author    {{author_name}} <{{author_email}}>
-%% @copyright {{copyright_year}} {{author_name}}
+%% @author    name <email>
+%% @copyright year author
 %% @doc       {{description}}
 %% @end
 -export([main/1]).

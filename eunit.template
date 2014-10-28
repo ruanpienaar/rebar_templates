@@ -1,8 +1,6 @@
+% rebar create In LIB/ or APPS/app/
 {variables, [
-  {name, "mymodule"}, 
-  {copyright_year, "2011"},
-  {author_name, "AUTHOR_NAME AUTHOR_SURNAME"},
-  {author_email,"'EMAIL_ADDRESS'"}
+  {name, "mymodule"}
 ]}.
 {dir, "tests"}.
 {template, "eunit.erl", "tests/{{name}}_tests.erl"}.

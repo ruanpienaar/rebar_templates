@@ -1,0 +1,6 @@
+% rebar create In LIB/ or APPS/app/
+{variables, [{modid, "mymod"}]}.
+{dir,"src"}.
+{dir,"test"}.
+{template, "mod.erl", "src/{{modid}}.erl"}.
+{template, "mod_tests.erl", "test/{{modid}}_tests.erl"}.

@@ -1,10 +1,5 @@
-%%%'   HEADER
-%%% @author {{author_name}} <{{author_email}}>
-%%% @copyright {{copyright_year}} {{author_name}}
-%%% @doc Nitrogen page handler for {{description}}
-%%% @end
 -module({{app_name}}_{{name}}_page).
--author('{{author_name}} <{{author_email}}>').
+%%-author('').
 
 -include_lib("nitrogen_core/include/wf.hrl").
 -compile(export_all).

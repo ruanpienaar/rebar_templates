@@ -1,8 +1,6 @@
+% rebar create In LIB/ or APPS/app/
 {variables, [
-  {name, "compiler_name"}, 
-  {copyright_year, "2011"},
-  {author_name, "AUTHOR_NAME AUTHOR_SURNAME"},
-  {author_email,"'EMAIL_ADDRESS'"}
+  {name, "compiler_name"}
 ]}.
 {dir, "src"}.
 {template, "rebar_compiler.erl", "src/{{name}}.erl"}.

@@ -1,2 +1,4 @@
+% rebar create In LIB/ or APPS/app/
 {variables, [{fsmid, "myfsm"}]}.
+{dir,"src"}.
 {template, "simplefsm.erl", "src/{{fsmid}}.erl"}.

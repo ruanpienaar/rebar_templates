@@ -1,8 +1,6 @@
 {variables, [
   {name, "mymodule"},
-  {copyright_year, "2013"},
-  {author_name, "AUTHOR_NAME AUTHOR_SURNAME"},
-  {author_email,"'EMAIL_ADDRESS'"},
   {description, "A riak_pipe vnode worker callback module."}
 ]}.
-{template, "riak_pipe_vnode_worker.erl", "{{name}}_vnode_worker.erl"}.
+{dir,"src"}.
+{template, "riak_pipe_vnode_worker.erl", "src/{{name}}_vnode_worker.erl"}.

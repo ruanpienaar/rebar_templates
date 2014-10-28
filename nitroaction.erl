@@ -1,15 +1,10 @@
-%%%'   HEADER
-%%% @author {{author_name}} <{{author_email}}>
-%%% @copyright {{copyright_year}} {{author_name}}
-%%% @doc Nitrogen action: {{description}}
-%%% @end
 -module({{app_name}}_{{name}}_action).
--author('{{author_name}} <{{author_email}}>').
+%%-author('').
 
 -include_lib("nitrogen_core/include/wf.hrl").
 -export([render_action/1]).
 
-%% TODO: Make sure to add record definition to your app's header file. 
+%% TODO: Make sure to add record definition to your app's header file.
 
 %%%.
 %%%'   NITROGEN CALLBACKS

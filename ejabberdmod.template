@@ -1,4 +1,6 @@
+% rebar create In LIB/ or APPS/app/
 {variables, [
-  {name, "myejabberdmod"}, 
-  {author_name, "AUTHOR_NAME AUTHOR_SURNAME <'EMAIL_ADDRESS'>"}]}.
+  {name, "ejab_mod"}
+]}.
+{dir,"src"}.
 {template, "ejabberdmod.erl", "src/mod_{{name}}.erl"}.
