@@ -2,7 +2,6 @@
 
 -export([ init/3,
           rest_init/2,
-          handle/2,
           terminate/3 ]).
 
 -define(STATE,{{name}}_state).
