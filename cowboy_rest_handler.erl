@@ -1,4 +1,4 @@
--module({{appid}}).
+-module({{name}}).
 
 -export([ init/3,
           rest_init/2,
