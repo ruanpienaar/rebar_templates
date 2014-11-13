@@ -62,11 +62,11 @@ handle_json(Req, State) ->
     {Method,Req1} = cowboy_req:method(Req),
     do_handle_json(Req1,State,Method).
 
-do_handle_json(Req1,State,<<"GET">>) ->
-    {<<"Hello World!">>,R1,State};
-do_handle_json(Req1,State,<<"POST">>) ->
-    SetBody = cowboy_req:set_resp_body(<<"SomeBody!">>, Req),
-    { {true,"path/to/resource"}, SetBody, State}.
+do_handle_json(Req,State,<<"GET">>) ->
+    {<<"Hello World!">>,Req,State};
+do_handle_json(Req,State,<<"POST">>) ->
+    SetBodyReq = cowboy_req:set_resp_body(<<"SomeBody!">>, Req),
+    { {true,"path/to/resource"}, SetBodyReq, State}.
 
 terminate(normal, _Req, _State) ->
     ok;
