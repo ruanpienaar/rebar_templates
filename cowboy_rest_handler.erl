@@ -5,7 +5,7 @@
           handle/2,
           terminate/3 ]).
 
--define(STATE,{{appid}}_state).
+-define(STATE,{{name}}_state).
 -record(?STATE,{}).
 
 %% All available REST handler exports:
