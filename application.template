@@ -38,6 +38,4 @@
     {chmod, 8#744, "rel/files/{{nodeid}}"}.
     {file, "application_node.sys.config", "rel/files/sys.config"}.
     {template, "node.vm.args", "rel/files/vm.args"}.
-    {template, "node.windows.runner.cmd", "rel/files/{{nodeid}}.cmd"}.
-    {file, "node.windows.start_erl.cmd", "rel/files/start_erl.cmd"}.
     {file, "node.install_upgrade.escript", "rel/files/install_upgrade.escript"}.
