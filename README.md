@@ -6,11 +6,8 @@
 Note: *have rebar in $PATH.*
 
 ```bash
-mkdir -p ~/.rebar/templates
-```
-
-```bash
-cp * ~/.rebar/templates
+mkdir ~/.rebar/
+git clone https://github.com/ruanpienaar/rebar_templates ~/.rebar/templates/
 ```
 
 ## Creating Application skeleton:
