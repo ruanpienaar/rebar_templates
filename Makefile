@@ -29,7 +29,7 @@ update-deps:
 	@rebar update-deps
 
 test: offline
-	@rebar skip_deps=true apps="loom" eunit
+	@rebar skip_deps=true apps={{appid}} eunit
 
 clean:
 	@rebar clean
