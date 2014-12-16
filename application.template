@@ -20,12 +20,12 @@
     {dir, "apps/{{appid}}/ebin"}.
     {dir, "apps/{{appid}}/include"}.
     {file, "erlang_include.hrl", "apps/{{appid}}/include/{{appid}}.hrl"}.
-    {dir, "apps/{{appid}}/tests"}.
-    {template, "eunit.erl", "apps/{{appid}}/tests/{{appid}}_tests.erl"}.
+    {dir, "apps/{{appid}}/test"}.
+    {template, "eunit.erl", "apps/{{appid}}/test/{{appid}}_tests.erl"}.
     {dir, "apps/{{appid}}/priv"}.
 
 {dir, "docs"}.
-{dir, "tests"}.
+{dir, "test"}.
 
 {dir, "rel"}.
 {dir, "rel/{{nodeid}}/"}.

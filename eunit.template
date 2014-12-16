@@ -2,5 +2,5 @@
 {variables, [
   {name, "mymodule"}
 ]}.
-{dir, "tests"}.
-{template, "eunit.erl", "tests/{{name}}_tests.erl"}.
+{dir, "test"}.
+{template, "eunit.erl", "test/{{name}}_tests.erl"}.
