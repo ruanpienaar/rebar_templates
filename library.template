@@ -10,8 +10,8 @@
 {dir, "ebin"}.
 {dir, "include"}.
 {file, "erlang_include.hrl", "include/{{appid}}.hrl"}.
-{dir, "tests"}.
-{template, "eunit.erl", "tests/{{appid}}_tests.erl"}.
+{dir, "test"}.
+{template, "eunit.erl", "test/{{appid}}_tests.erl"}.
 {dir, "priv"}.
 {template, "README", "README"}.
 {template, "rebar.config.template", "rebar.config"}.
