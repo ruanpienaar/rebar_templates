@@ -19,4 +19,4 @@
 {file, "gitignore", ".gitignore"}.
 {template, "library_start-dev.template","start-dev.sh"}.
 {chmod, 8#744, "start-dev.sh"}.
-{file, "application_simplenode.sys.config", "sys.config"}.
+{file, "application_node.sys.config", "sys.config"}.
