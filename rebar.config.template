@@ -10,8 +10,9 @@
 {app_bin, []}.
 {deps_dir, ["deps"]}.
 {deps, [
-  {edown, ".*", {git, "git://github.com/esl/edown.git", "HEAD"}},
-  {lager, ".*", {git, "git://github.com/basho/lager",{branch,"master"}}}
+  {edown,	".*", {git, "https://github.com/esl/edown.git", 		"HEAD"}},
+  {lager,	".*", {git, "https://github.com/basho/lager",			{branch,"master"}}},
+  {reloader,	".*", {git, "https://github.com/oinksoft/reloader.git",		{branch,"master"}}}
 ]}.
 {sub_dirs,
  ["apps/{{appid}}",
