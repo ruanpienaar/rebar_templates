@@ -60,3 +60,12 @@ make
 cd apps
 create template=single_app appid=testapp2
 ```
+
+## List of templates:
+
+application [ appid, description, nodeid ]
+( Create the basis for a self contained erlang applicaiton release )
+
+apps_app [ appid, description ]
+( create another app inside apps/ )
+
