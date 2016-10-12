@@ -7,7 +7,7 @@
 {template, "README", "README"}.
 {template, "rebar.config.template", "rebar.config"}.
 {template, "application_Makefile", "Makefile"}.
-{file, "gitignore", ".gitignore"}.
+{file, "erlang_gitignore", ".gitignore"}.
 
 {dir, "deps"}.
 

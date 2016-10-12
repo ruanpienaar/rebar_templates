@@ -16,7 +16,7 @@
 {template, "README", "README"}.
 {template, "rebar.config.template", "rebar.config"}.
 {file, "library_Makefile", "Makefile"}.
-{file, "gitignore", ".gitignore"}.
+{file, "erlang_gitignore", ".gitignore"}.
 {template, "library_start-dev.template","start-dev.sh"}.
 {chmod, 8#744, "start-dev.sh"}.
 {file, "application_node.sys.config", "sys.config"}.

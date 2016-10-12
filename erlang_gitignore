@@ -1,9 +1,12 @@
-ebin/*
+.eunit
+deps
+*.o
 *.beam
-deps/*
 *.plt
+deps/*
 *.DS_Store
 *.log
-apps/*/logs
 erl_crash.dump
 Mnesia*
+.rebar
+ebin/* 
