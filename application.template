@@ -4,7 +4,7 @@
   {nodeid, "myproject"}
 ]}.
 
-{template, "README", "README"}.
+{template, "README.md", "README.md"}.
 {template, "rebar.config.template", "rebar.config"}.
 {template, "application_Makefile", "Makefile"}.
 {file, "erlang_gitignore", ".gitignore"}.

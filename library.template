@@ -13,7 +13,7 @@
 {dir, "test"}.
 {template, "eunit.erl", "test/{{appid}}_tests.erl"}.
 {dir, "priv"}.
-{template, "README", "README"}.
+{template, "README.md", "README.md"}.
 {template, "rebar.config.template", "rebar.config"}.
 {file, "library_Makefile", "Makefile"}.
 {file, "erlang_gitignore", ".gitignore"}.
