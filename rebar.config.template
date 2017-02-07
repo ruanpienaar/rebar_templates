@@ -1,23 +1,17 @@
 {erl_first_files, []}.
-{erl_opts,
-    [fail_on_warning,
-        {parse_transform, lager_transform}
-    ]
-}.
+{erl_opts,[fail_on_warning]}.
 {erlydtl_opts, []}.
 {cover_enabled, true}.
 {target, "rel"}.
 {app_bin, []}.
 {deps_dir, ["deps"]}.
 {deps, [
-  {edown,	".*", {git, "https://github.com/esl/edown.git", 		"HEAD"}},
-  {lager,	".*", {git, "https://github.com/basho/lager",			{branch,"master"}}},
-  {reloader,	".*", {git, "https://github.com/oinksoft/reloader.git",		{branch,"master"}}}
+  %% {dep, ".*", {git, "https://github.com/xxx/dep.git", "HEAD"}}
 ]}.
 {sub_dirs,
  ["apps/{{appid}}",
-  "rel"]
-}.
+  "rel"
+ ]}.
 {edoc_opts, [{doclet, edown_doclet}]}.
 {sub_dirs, []}.
 {eunit_opts, [verbose]}.

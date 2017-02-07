@@ -1,10 +1,10 @@
 {variables, [
   {appid, "myproject"},
   {description, "Fill in description of project here."},
-  {nodeid, "myproject"}
+  {releaseid, "myproject_release"}
 ]}.
 
-{template, "README.md", "README.md"}.
+{template, "README_example", "README.md"}.
 {template, "rebar.config.template", "rebar.config"}.
 {template, "application_Makefile", "Makefile"}.
 {file, "erlang_gitignore", ".gitignore"}.
@@ -28,16 +28,16 @@
 {dir, "test"}.
 
 {dir, "rel"}.
-{dir, "rel/{{nodeid}}/"}.
+{dir, "rel/{{releaseid}}/"}.
     {template, "application.reltool.config", "rel/reltool.config"}.
     {file, "node.erl.script", "rel/files/erl"}.
     {chmod, 8#744, "rel/files/erl"}.
     {file, "node.nodetool", "rel/files/nodetool"}.
     {chmod, 8#744, "rel/files/nodetool"}.
-    {file, "node.runner", "rel/files/{{nodeid}}"}.
-    {chmod, 8#744, "rel/files/{{nodeid}}"}.
+    {file, "node.runner", "rel/files/{{releaseid}}"}.
+    {chmod, 8#744, "rel/files/{{releaseid}}"}.
     {file, "application_node.sys.config", "rel/files/sys.config"}.
     {template, "node.vm.args", "rel/files/vm.args"}.
-    {template, "node.windows.runner.cmd", "rel/files/{{nodeid}}.cmd"}.
-    {file, "node.windows.start_erl.cmd", "rel/files/start_erl.cmd"}.    
+    {template, "node.windows.runner.cmd", "rel/files/{{releaseid}}.cmd"}.
+    {file, "node.windows.start_erl.cmd", "rel/files/start_erl.cmd"}.
     {file, "node.install_upgrade.escript", "rel/files/install_upgrade.escript"}.
