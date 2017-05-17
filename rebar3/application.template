@@ -1,0 +1,10 @@
+{variables, [
+  {appid, "myproject"},
+  {description, "Fill in description of project here."},
+  {releaseid, "myproject_release"}
+]}.
+
+{template, "default_README.md", "README.md"}.
+{template, "application_rebar3.config.template", "rebar.config"}.
+%%	{template, "application_rebar3_Makefile", "Makefile"}.
+%%	{file, "erlang_rebar2_gitignore", ".gitignore"}.

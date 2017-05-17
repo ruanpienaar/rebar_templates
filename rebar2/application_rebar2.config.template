@@ -1,0 +1,14 @@
+{erl_opts,[fail_on_warning]}.
+{cover_enabled, true}.
+{target, "rel"}.
+{deps_dir, ["deps"]}.
+{deps, [
+  %% {dep, ".*", {git, "https://github.com/xxx/dep.git", "HEAD"}}
+]}.
+{sub_dirs,
+ ["apps/{{appid}}",
+  "rel"
+ ]}.
+{edoc_opts, [{doclet, edown_doclet}]}.
+{eunit_opts, [verbose]}.
+{eunit_compile_opts, [{i, "../"}]}.

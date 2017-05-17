@@ -1,6 +1,0 @@
-% rebar create In LIB/ or APPS/app/
-{variables, [
-  {name, "ejab_mod"}
-]}.
-{dir,"src"}.
-{template, "ejabberdmod.erl", "src/mod_{{name}}.erl"}.

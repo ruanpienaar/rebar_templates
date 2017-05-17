@@ -1,0 +1,13 @@
+{erl_first_files, []}.
+{erl_opts,[fail_on_warning]}.
+{erlydtl_opts, []}.
+{cover_enabled, true}.
+{app_bin, []}.
+{deps_dir, ["deps"]}.
+{deps, [
+  %% {dep, ".*", {git, "https://github.com/xxx/dep.git", "HEAD"}}
+]}.
+{sub_dirs,[]}.
+{edoc_opts, [{doclet, edown_doclet}]}.
+{eunit_opts, [verbose]}.
+{eunit_compile_opts, [{i, "../"}]}.

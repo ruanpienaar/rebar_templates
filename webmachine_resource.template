@@ -1,7 +1,0 @@
-% rebar create In LIB/ or APPS/app/
-{variables, [
-  {name, "my_resource"},
-  {app_name, "wm_app"}
-]}.
-{dir,"src"}.
-{template, "webmachine_resource.erl", "src/{{app_name}}_{{name}}_resource.erl"}.

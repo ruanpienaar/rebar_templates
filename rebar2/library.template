@@ -1,0 +1,22 @@
+{variables, [
+  {appid, "myproject"},
+  {description, "Fill in description of project here."}
+]}.
+{dir, "deps"}.
+{dir, "src"}.
+{template, "app.app.src", "src/{{appid}}.app.src"}.
+{template, "app_app.erl", "src/{{appid}}_app.erl"}.
+{template, "app_sup.erl", "src/{{appid}}_sup.erl"}.
+{dir, "ebin"}.
+{dir, "include"}.
+{file, "erlang_include.hrl", "include/{{appid}}.hrl"}.
+{dir, "test"}.
+{template, "eunit.erl", "test/{{appid}}_tests.erl"}.
+{dir, "priv"}.
+{file, "default_README.md", "README.md"}.
+{template, "library_rebar2.config.template", "rebar.config"}.
+{file, "library_rebar2_Makefile", "Makefile"}.
+{file, "erlang_rebar2_gitignore", ".gitignore"}.
+{file, "library_rebar2_start-dev","start-dev.sh"}.
+{chmod, 8#744, "start-dev.sh"}.
+{file, "sys.config.example", "sys.config"}.

@@ -1,0 +1,6 @@
+% rebar create In LIB/ or APPS/app/
+{variables, [{module, "mymodule"}]}.
+{dir,"src"}.
+{dir,"c_src"}.
+{template, "nif_template.erl", "src/{{module}}.erl"}.
+{template, "nif.c", "c_src/{{module}}.c"}.
