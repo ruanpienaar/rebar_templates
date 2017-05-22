@@ -194,7 +194,7 @@
 
 %% apps to auto-boot with `rebar3 shell'; defaults to apps
 %% specified in a `relx' tuple, if any.
-%% {shell, [{apps, [app1, app2]}]}.
+{shell, [{apps, [ {{appid}} ]}]}.
 
 %% == xref ==
 

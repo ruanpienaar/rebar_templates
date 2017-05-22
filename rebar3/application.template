@@ -6,5 +6,18 @@
 
 {template, "default_README.md", "README.md"}.
 {template, "application_rebar3.config.template", "rebar.config"}.
-%%	{template, "application_rebar3_Makefile", "Makefile"}.
-%%	{file, "erlang_rebar2_gitignore", ".gitignore"}.
+{template, "application_rebar3_Makefile", "Makefile"}.
+{file, "erlang_rebar3_gitignore", ".gitignore"}.
+
+{dir, "apps"}.
+    {dir, "apps/{{appid}}"}.
+    {dir, "apps/{{appid}}/src"}.
+    {template, "app.app.src", "apps/{{appid}}/src/{{appid}}.app.src"}.
+    {template, "app_app.erl", "apps/{{appid}}/src/{{appid}}_app.erl"}.
+    {template, "app_sup.erl", "apps/{{appid}}/src/{{appid}}_sup.erl"}.
+    {dir, "apps/{{appid}}/ebin"}.
+    {dir, "apps/{{appid}}/include"}.
+    {file, "erlang_include.hrl", "apps/{{appid}}/include/{{appid}}.hrl"}.
+    {dir, "apps/{{appid}}/test"}.
+    {template, "eunit.erl", "apps/{{appid}}/test/{{appid}}_tests.erl"}.
+    {dir, "apps/{{appid}}/priv"}.

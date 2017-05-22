@@ -182,19 +182,20 @@
 
 %% == Releases ==
 
-%%{relx, [{release, {my_release, "0.0.1"},
-%%         [myapp]},
+{relx, [{release, { {{releaseid}}, "0.0.1"},
+         [ {{appid}} ]},
 
-%%        {dev_mode, true},
-%%        {include_erts, false},
+        {dev_mode, true},
+        {include_erts, false},
 
-%%        {extended_start_script, true}]}.
+        {extended_start_script, true}]
+}.
 
 %% == Shell ==
 
 %% apps to auto-boot with `rebar3 shell'; defaults to apps
 %% specified in a `relx' tuple, if any.
-%% {shell, [{apps, [app1, app2]}]}.
+{shell, [{apps, [ {{appid}} ]}]}.
 
 %% == xref ==
 

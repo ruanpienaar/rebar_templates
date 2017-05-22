@@ -3,14 +3,11 @@
   {description, "Fill in description of project here."},
   {releaseid, "release"}
 ]}.
-
 {template, "default_README.md", "README.md"}.
 {template, "application_rebar2.config.template", "rebar.config"}.
 {template, "application_rebar2_Makefile", "Makefile"}.
 {file, "erlang_rebar2_gitignore", ".gitignore"}.
-
 {dir, "deps"}.
-
 {dir, "apps"}.
     {dir, "apps/{{appid}}"}.
     {dir, "apps/{{appid}}/src"}.
@@ -23,10 +20,7 @@
     {dir, "apps/{{appid}}/test"}.
     {template, "eunit.erl", "apps/{{appid}}/test/{{appid}}_tests.erl"}.
     {dir, "apps/{{appid}}/priv"}.
-
 {dir, "docs"}.
-{dir, "test"}.
-
 {dir, "rel"}.
 {dir, "rel/{{releaseid}}/"}.
     {template, "application_rebar2.reltool.config", "rel/reltool.config"}.
