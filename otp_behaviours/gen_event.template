@@ -1,6 +1,6 @@
-% rebar create In LIB/ or APPS/app/
+% [ rebar create / rebar3 new ] In LIB/ or APPS/app/
 {variables, [
-  {name, "my_event"}
+  {mod, "my_event"}
 ]}.
 {dir,"src"}.
-{template, "gen_event_template.erl", "src/{{name}}.erl"}.
+{template, "gen_event_template.erl", "src/{{mod}}.erl"}.

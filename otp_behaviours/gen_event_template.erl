@@ -1,10 +1,4 @@
-%%%'   HEADER
-%%% @author {{author_name}} <{{author_email}}>
-%%% @copyright {{author_name}}
-%%% @doc gen_event that {{description}}
-%%% @end
--module({{name}}).
--author('{{author_name}} <{{author_email}}>').
+-module({{mod}}).
 
 -behaviour(gen_event).
 

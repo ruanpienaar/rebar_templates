@@ -1,0 +1,4 @@
+% [ rebar create / rebar3 new ] In LIB/ or APPS/app/
+{variables, [{mod, "my_statem_handle_event_functions_example"}]}.
+{dir,"src"}.
+{template, "gen_statem_handle_event_functions_template.erl", "src/{{mod}}.erl"}.

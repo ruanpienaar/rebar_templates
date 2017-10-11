@@ -1,4 +1,4 @@
-% rebar create In LIB/ or APPS/app/
-{variables, [{fsmid, "myfsm"}]}.
+% [ rebar create / rebar3 new ] In LIB/ or APPS/app/
+{variables, [{mod, "my_fsm"}]}.
 {dir,"src"}.
-{template, "simplefsm.erl", "src/{{fsmid}}.erl"}.
+{template, "gen_fsm_template.erl", "src/{{mod}}.erl"}.

@@ -1,4 +1,4 @@
--module({{fsmid}}).
+-module({{mod}}).
 -behaviour(gen_fsm).
 -define(SERVER, ?MODULE).
 
@@ -54,4 +54,3 @@ code_change(_OldVsn, StateName, State, _Extra) ->
 %% ------------------------------------------------------------------
 %% Internal Function Definitions
 %% ------------------------------------------------------------------
-
