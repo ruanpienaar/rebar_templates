@@ -24,7 +24,7 @@ start_link() ->
     gen_statem:start_link(?REG_NAME, ?MODULE, {}, []).
 
 init({}) ->
-    {ok, initial_state, _State = #{}}.
+    {ok, initial_state, _Data = #{}}.
 
 %% 'state_functions' | 'handle_event_function'
 callback_mode() ->
