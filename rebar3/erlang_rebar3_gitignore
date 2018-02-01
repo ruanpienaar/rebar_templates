@@ -12,3 +12,4 @@ Mnesia*
 ebin/* 
 _build/
 rebar.lock
+rebar3
