@@ -1,10 +1,7 @@
-.PHONY: compile get-deps clean
+.PHONY: compile clean
 
 compile: rebar3 get-deps
 	@./rebar3 compile
-
-get-deps:
-	@./rebar3 get-deps
 
 clean:
 	@./rebar3 clean
