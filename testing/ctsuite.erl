@@ -24,7 +24,8 @@ all() ->
 
 % Information function used to return properties for the suite. (Optional)
 suite() ->
-    [].
+    [{timetrap, {minutes, 10}} % wait for 10, better than the default 30min wait.
+    ].
     
 % For declaring test case groups. (Optional)
 groups() ->
