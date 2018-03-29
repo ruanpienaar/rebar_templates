@@ -1,0 +1,2 @@
+{variables, [{appid, "mod"}]}.
+{template, "eunit.erl", "{{appid}}_tests.erl"}.
