@@ -1,4 +1,4 @@
--module({{name}}_SUITE).
+-module({{mod}}_SUITE).
 -export([
     all/0,
     suite/0,

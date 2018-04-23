@@ -1,5 +1,7 @@
 -module({{mod}}).
 
+-behaviour(gen_statem).
+
 %% API
 -export([start_link/0]).
 

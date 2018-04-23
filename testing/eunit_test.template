@@ -1,0 +1,3 @@
+{variables, [{mod, "mod"}]}.
+{dir, "test"}.
+{template, "eunit.erl", "test/{{mod}}_tests.erl"}.

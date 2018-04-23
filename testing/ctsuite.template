@@ -1,6 +1,3 @@
-% rebar create In LIB/ or APPS/app/
-{variables, [
-  {name, "suitename"}
-]}.
+{variables, [{mod, "suitename"}]}.
 {dir, "test"}.
-{template, "ctsuite.erl", "test/{{name}}_SUITE.erl"}.
+{template, "ctsuite.erl", "test/{{mod}}_SUITE.erl"}.

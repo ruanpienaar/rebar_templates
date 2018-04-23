@@ -1,7 +1,7 @@
--module({{appid}}_tests).
+-module({{mod}}_tests).
 -include_lib("eunit/include/eunit.hrl").
 
-{{appid}}_test_() ->
+{{mod}}_unit_test_() ->
     {setup,
      % Setup Fixture
      fun() -> 
@@ -14,11 +14,12 @@
      % List of tests
      [
        % Example test
-       fun func1/0
+       {"{{mod}}:func1/0",
+            ?_assert(unit_testing:try_test_fun(fun func1/0))}
      ]
     }.
 
 func1() ->
     ?assert(
-        is_list({{appid}}:module_info())
+        is_list({{mod}}:module_info())
     ).
