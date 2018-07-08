@@ -1,0 +1,4 @@
+{variables, [
+  {name, "table"}
+]}.
+{template, "mnesia_table.erl", "{{name}}.erl"}.
