@@ -7,7 +7,7 @@
 
 %% State M exports
 -export([
-    init/1, callback_mode/0, handle_event/3, terminate/3
+    init/1, callback_mode/0, handle_event/4, terminate/3
 ]).
 
 %% optional_callbacks:
@@ -47,10 +47,10 @@ callback_mode() ->
 %% {stop, Reason, NewData} |
 %% {stop_and_reply, Reason, Replies} |
 %% {stop_and_reply, Reason, Replies, NewData}.
-handle_event(EventType, CurentState, Data) ->
-    io:format("~p handle_event(~p, ~p, ~p)~n", 
-        [?MODULE, EventType, CurentState, Data]),
-    {next_state, initial_state, _NewData=Data}.
+handle_event(EventType, EventContent, CurentState, Data) ->
+    io:format("~p handle_event(~p, ~p, ~p, ~p)~n",
+        [?MODULE, EventType, EventContent, CurentState, Data]),
+    {next_state, initial_state, _NewData = Data}.
 
 terminate(Reason, State, Data) ->
     io:format("~p terminate(~p, ~p, ~p)~n",
