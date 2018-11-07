@@ -123,7 +123,7 @@
 %% == Escript ==
 
 %% name of the main OTP application to boot
-%% {escript_main_app, application}
+%% {escript_main_app, application}.
 %% Name of the resulting escript executable
 %% {escript_name, "application"}.
 %% apps (other than main and deps) to be included
