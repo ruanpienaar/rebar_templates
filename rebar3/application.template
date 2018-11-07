@@ -21,3 +21,6 @@
     {dir, "apps/{{appid}}/test"}.
     {template, "eunit.erl", "apps/{{appid}}/test/{{appid}}_tests.erl"}.
     {dir, "apps/{{appid}}/priv"}.
+    {dir, "config"}.
+    {template, "application_sys.config.template", "config/sys.config"}.
+    {template, "application_vm.args.template", "config/vm.args"}.

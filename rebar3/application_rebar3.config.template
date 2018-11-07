@@ -183,12 +183,15 @@
 %% == Releases ==
 
 {relx, [{release, { {{releaseid}}, "0.0.1"},
-         [ {{appid}} ]},
-
+         [ 
+            {{appid}} 
+         ]},
         {dev_mode, true},
         {include_erts, false},
-
-        {extended_start_script, true}]
+        {extended_start_script, true},
+        {vm_args, "config/vm.args"},
+        {sys_config, "config/sys.config"}
+       ]
 }.
 
 %% == Shell ==
