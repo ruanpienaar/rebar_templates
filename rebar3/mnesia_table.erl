@@ -1,5 +1,7 @@
 -module({{name}}).
 
+-define(VERSION, 2).
+
 -record(?MODULE, {
     key,
     value
@@ -24,12 +26,13 @@
     new/2
 ]).
 
-create_table(Nodes) ->
-    Opts = [
-        {disc_copies, Nodes},
-        {type, set},
-        {attributes, columns()}
-    ],
+create_table(Opts) ->
+% create_table(Nodes) ->
+%     Opts = [
+%         {disc_copies, Nodes},
+%         {type, set},
+%         {attributes, columns()}
+%     ],
     try
         Atrs = mnesia:table_info(?MODULE, attributes),
         io:format("[~p] Table ~p Already exists with columns ~p.~n",
