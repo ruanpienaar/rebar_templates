@@ -79,17 +79,38 @@
 %% == Dialyzer ==
 
 {dialyzer, [
-    {warnings, [underspecs, no_return]},
+    {warnings, [
+        % underspecs, no_return
+        no_return
+        ,no_unused
+        ,no_improper_lists
+        ,no_fun_app
+        ,no_match
+        ,no_opaque
+        ,no_fail_call
+        ,no_contracts
+        ,no_behaviours
+        ,no_undefined_callbacks
+        ,unmatched_returns
+        ,error_handling
+        % ,race_conditions
+        % ,overspecs
+        % ,underspecs
+        ,specdiffs
+    ]},
     {get_warnings, true},
     {plt_apps, top_level_deps}, % top_level_deps | all_deps
-    {plt_extra_apps, []},
+    {plt_extra_apps, [{{appid}}]},
     {plt_location, local}, % local | "/my/file/name"
     {plt_prefix, "rebar3"},
-    {base_plt_apps, [stdlib, kernel, crypto]},
+    {base_plt_apps, []},
+    {exclude_apps, [
+        kernel,
+        stdlib
+    ]},
     {base_plt_location, global}, % global | "/my/file/name"
     {base_plt_prefix, "rebar3"}
 ]}.
-
 
 %% == Directories ==
 
