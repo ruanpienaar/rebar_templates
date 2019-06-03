@@ -1,6 +1,6 @@
 {application, {{appid}},
  [
-  {description, ""},
+  {description, "{{appid}}"},
   {vsn, "1"},
   {registered, []},
   {applications, [
